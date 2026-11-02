@@ -40,7 +40,7 @@
     "description": "A visual story told through atmosphere and motion.",
     "video": "",
     "thumbnail": ""
-  }
+},
 {
   "title": "Premium Sneaker Advertisement",
   "category": "Luxury Products",
@@ -68,4 +68,4 @@
   "description": "Elegant cinematic luxury bag showcase.",
   "video": "https://www.youtube.com/embed/ErfsLjifBKQ",
   "thumbnail": ""
-}
+  ]
