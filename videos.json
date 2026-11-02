@@ -40,33 +40,33 @@
     "description": "A visual story told through atmosphere and motion.",
     "video": "",
     "thumbnail": ""
-},
-{
-  "title": "Premium Sneaker Advertisement",
-  "category": "Luxury Products",
-  "description": "Cinematic sneaker advertisement showcasing premium design and style.",
-  "video": "https://www.youtube.com/embed/pnjueNU9dFE",
-  "thumbnail": ""
-},
-{
-  "title": "Cinematic Brand Intro & Outro",
-  "category": "Cinematic",
-  "description": "Creative brand introduction and outro.",
-  "video": "https://www.youtube.com/embed/T8fYklYYDu8",
-  "thumbnail": ""
-},
-{
-  "title": "Premium Headphones Advertisement",
-  "category": "Luxury Products",
-  "description": "Cinematic headphones product showcase.",
-  "video": "https://www.youtube.com/embed/zFAQw4Fv8xQ",
-  "thumbnail": ""
-},
-{
-  "title": "Luxury Bag Advertisement",
-  "category": "Luxury Products",
-  "description": "Elegant cinematic luxury bag showcase.",
-  "video": "https://www.youtube.com/embed/ErfsLjifBKQ",
-  "thumbnail": ""
   },
+  {
+    "title": "Premium Sneaker Advertisement",
+    "category": "Luxury Products",
+    "description": "Cinematic sneaker advertisement showcasing premium design and style.",
+    "video": "https://www.youtube.com/embed/pnjueNU9dFE",
+    "thumbnail": "https://img.youtube.com/vi/pnjueNU9dFE/hqdefault.jpg"
+  },
+  {
+    "title": "Cinematic Brand Intro & Outro",
+    "category": "Cinematic",
+    "description": "Creative brand introduction and outro.",
+    "video": "https://www.youtube.com/embed/T8fYklYYDu8",
+    "thumbnail": "https://img.youtube.com/vi/T8fYklYYDu8/hqdefault.jpg"
+  },
+  {
+    "title": "Premium Headphones Advertisement",
+    "category": "Luxury Products",
+    "description": "Cinematic headphones product showcase.",
+    "video": "https://www.youtube.com/embed/zFAQw4Fv8xQ",
+    "thumbnail": "https://img.youtube.com/vi/zFAQw4Fv8xQ/hqdefault.jpg"
+  },
+  {
+    "title": "Luxury Bag Advertisement",
+    "category": "Luxury Products",
+    "description": "Elegant cinematic luxury bag showcase.",
+    "video": "https://www.youtube.com/embed/ErfsLjifBKQ",
+    "thumbnail": "https://img.youtube.com/vi/ErfsLjifBKQ/hqdefault.jpg"
+  }
 ]
