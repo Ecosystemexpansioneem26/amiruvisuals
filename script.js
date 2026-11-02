@@ -1,32 +1,84 @@
-let data = [];
-
 const grid = document.getElementById('grid');
 const modal = document.getElementById('modal');
 const player = document.getElementById('player');
+const closeBtn = document.getElementById('close');
+const filters = document.getElementById('filters');
+const year = document.getElementById('year');
 
-const esc = value => String(value || '').replace(/[&<>"']/g, c => ({
-  '&': '&amp;', '<': '&lt;', '>': '&gt;',
-  '"': '&quot;', "'": '&#39;'
-}[c]));
+let videos = [];
+
+function escapeHTML(value) {
+  return String(value || '').replace(/[&<>"']/g, char => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  }[char]));
+}
+
+function getYouTubeID(url) {
+  const match = String(url || '').match(
+    /(?:youtube\.com\/(?:shorts\/|watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+  );
+  return match ? match[1] : '';
+}
 
 function render(category = 'All') {
-  const items = data.filter(item =>
-    category === 'All' || item.category === category
-  );
+  const items = videos
+    .map((item, index) => ({ ...item, originalIndex: index }))
+    .filter(item => category === 'All' || item.category === category);
 
-  grid.innerHTML = items.map(item => `
-    <article class="card">
-      <div class="thumb">
-        ${item.thumbnail ? `<img src="${esc(item.thumbnail)}" alt="">` : ''}
-        <span class="tag">${esc(item.category)}</span>
-        <span class="play">▶</span>
-      </div>
-      <div class="info">
-        <h3>${esc(item.title)}</h3>
-        <p>${esc(item.description)}</p>
-      </div>
-    </article>
-  `).join('');
+  grid.innerHTML = items.map(item => {
+    const id = getYouTubeID(item.video);
+    const thumbnail = item.thumbnail ||
+      (id ? `https://img.youtube.com/vi/${id}/hqdefault.jpg` : '');
+
+    return `
+      <article class="card" data-id="${item.originalIndex}">
+        <div class="thumb">
+          ${thumbnail ? `<img src="${escapeHTML(thumbnail)}" alt="${escapeHTML(item.title)}">` : ''}
+          <span class="tag">${escapeHTML(item.category)}</span>
+          <span class="play">▶</span>
+        </div>
+        <div class="info">
+          <h3>${escapeHTML(item.title)}</h3>
+          <p>${escapeHTML(item.description)}</p>
+        </div>
+      </article>
+    `;
+  }).join('');
+
+  grid.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+      playVideo(videos[Number(card.dataset.id)]);
+    });
+  });
+}
+
+function playVideo(item) {
+  if (!item || !item.video) return;
+
+  const id = getYouTubeID(item.video);
+
+  if (id) {
+    player.innerHTML = `
+      <iframe
+        src="https://www.youtube.com/embed/${id}?autoplay=1"
+        title="${escapeHTML(item.title)}"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    `;
+  } else {
+    player.innerHTML = `
+      <video controls autoplay playsinline>
+        <source src="${escapeHTML(item.video)}">
+      </video>
+    `;
+  }
+
+  modal.classList.add('open');
 }
 
 function closePlayer() {
@@ -34,31 +86,44 @@ function closePlayer() {
   player.innerHTML = '';
 }
 
-document.getElementById('close').onclick = closePlayer;
-modal.onclick = e => {
-  if (e.target === modal) closePlayer();
-};
+if (closeBtn) closeBtn.addEventListener('click', closePlayer);
 
-document.getElementById('year').textContent =
-  new Date().getFullYear();
+if (modal) {
+  modal.addEventListener('click', event => {
+    if (event.target === modal) closePlayer();
+  });
+}
 
-document.getElementById('filters').onclick = e => {
-  const button = e.target.closest('button');
-  if (!button) return;
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') closePlayer();
+});
 
-  document.querySelectorAll('.filters button')
-    .forEach(b => b.classList.remove('active'));
+if (filters) {
+  filters.addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (!button) return;
 
-  button.classList.add('active');
-  render(button.dataset.cat);
-};
+    filters.querySelectorAll('button').forEach(item => {
+      item.classList.remove('active');
+    });
 
-fetch('videos.json')
-  .then(response => response.json())
-  .then(videos => {
-    data = videos;
+    button.classList.add('active');
+    render(button.dataset.cat);
+  });
+}
+
+if (year) year.textContent = new Date().getFullYear();
+
+fetch('./videos.json')
+  .then(response => {
+    if (!response.ok) throw new Error('Could not load videos.json');
+    return response.json();
+  })
+  .then(data => {
+    videos = data;
     render();
   })
-  .catch(() => {
-    grid.innerHTML = '<p>Could not load videos. Please check videos.json.</p>';
+  .catch(error => {
+    console.error(error);
+    grid.innerHTML = '<p>Videos could not load. Please check videos.json.</p>';
   });
