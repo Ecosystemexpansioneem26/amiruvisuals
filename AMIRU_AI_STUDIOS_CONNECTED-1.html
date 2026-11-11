@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AMIRU AI STUDIOS — Creative Engine</title>
+<style>
+:root{--bg:#090b10;--panel:#11151e;--panel2:#171d29;--line:#252d3b;--text:#f4f6fb;--muted:#9aa6b8;--accent:#b8f36b;--accent2:#8cbf49}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(1000px 500px at 80% -10%,#1b2b23 0%,transparent 60%),var(--bg);color:var(--text);font:15px/1.5 Inter,system-ui,Arial,sans-serif}
+button,input,textarea,select{font:inherit}button{cursor:pointer}.app{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.side{border-right:1px solid var(--line);padding:24px 16px;background:#0c0f16}.brand{font-size:19px;font-weight:850;letter-spacing:.06em}.brand span{color:var(--accent)}.sub{font-size:10px;letter-spacing:.2em;color:var(--muted);margin-top:4px}.nav{margin-top:36px;display:grid;gap:7px}.nav button{border:0;background:transparent;color:var(--muted);text-align:left;padding:12px;border-radius:10px}.nav button.active,.nav button:hover{background:#1b242e;color:var(--text)}.nav small{display:block;color:#748197;font-size:10px;margin-top:2px}.sidefoot{position:sticky;top:90vh;margin-top:48px;color:var(--muted);font-size:11px}.main{padding:32px;max-width:1500px;width:100%;margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px}.eyebrow{color:var(--accent);font-size:11px;letter-spacing:.18em;font-weight:700}.h1{font-size:clamp(28px,4vw,44px);line-height:1.08;margin:8px 0}.muted{color:var(--muted)}.pill{border:1px solid #3b4a37;color:var(--accent);border-radius:999px;padding:7px 11px;font-size:11px}.layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:18px}.card{background:linear-gradient(145deg,#141a24,#10141c);border:1px solid var(--line);border-radius:17px;padding:20px}.card h2{font-size:17px;margin:0 0 5px}.card p{color:var(--muted);margin:0 0 17px;font-size:13px}.field{display:grid;gap:7px;margin:15px 0}.field label{font-size:12px;color:#c5cedb}.field textarea,.field input,.field select{width:100%;border:1px solid #303a4a;background:#0b1018;color:var(--text);border-radius:10px;padding:12px;outline:none}.field textarea{min-height:120px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--accent2)}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.btn{background:var(--accent);color:#10150b;border:0;border-radius:10px;padding:12px 16px;font-weight:800}.btn.secondary{background:#202938;color:var(--text);border:1px solid #354052}.btn:disabled{opacity:.45;cursor:not-allowed}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}.preview{min-height:350px;border:1px dashed #465264;border-radius:13px;background:linear-gradient(145deg,#151d27,#0d1118);display:flex;align-items:center;justify-content:center;text-align:center;padding:22px}.preview img{max-width:100%;max-height:520px;border-radius:10px}.emptyicon{font-size:42px;color:#75859b}.status{font-size:12px;color:var(--muted);margin-top:12px}.notice{border-left:3px solid var(--accent);background:#172018;padding:12px 14px;border-radius:0 10px 10px 0;color:#c8d4c0;font-size:12px;margin-top:16px}.tilegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.tile{border:1px solid var(--line);border-radius:12px;padding:15px;background:#121823}.tile b{display:block;margin-bottom:5px}.tile span{font-size:12px;color:var(--muted)}.hidden{display:none}.history{display:grid;gap:9px}.historyitem{display:flex;justify-content:space-between;gap:12px;padding:11px;border:1px solid var(--line);border-radius:10px;font-size:12px}.historyitem span{color:var(--muted)}.footnote{font-size:11px;color:#8290a3;margin-top:22px}
+@media(max-width:850px){.app{grid-template-columns:1fr}.side{border-right:0;border-bottom:1px solid var(--line);padding:15px}.nav{display:flex;overflow:auto;margin-top:16px}.nav button{white-space:nowrap}.sidefoot{display:none}.main{padding:20px 14px}.layout{grid-template-columns:1fr}.tilegrid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.two{grid-template-columns:1fr}.tilegrid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="side">
+  <div class="brand">AMIRU <span>AI</span> STUDIOS</div>
+  <div class="sub">INDEPENDENT CREATIVE INTELLIGENCE</div>
+  <nav class="nav">
+    <button class="active" data-page="image">✦ AI Art Engine<small>Start with the image</small></button>
+    <button data-page="characters">◉ Face & Characters<small>Reusable visual identities</small></button>
+    <button data-page="video">▶ Video Engine<small>Image-to-video workflow</small></button>
+    <button data-page="projects">▤ Projects & History<small>Your creative workspace</small></button>
+    <button data-page="architecture">⌘ Engine Architecture<small>What is connected</small></button>
+  </nav>
+  <div class="sidefoot">AMIRU AI STUDIOS<br>Private creative workspace · v0.2</div>
+</aside>
+<main class="main">
+  <div class="top"><div><div class="eyebrow">CREATIVE ENGINE / WORKSPACE</div><div class="h1">Create the visual first.</div><div class="muted">Build the image, define the character, then move into motion.</div></div><div class="pill">FREE-FIRST BUILD</div></div>
+
+  <section id="page-image">
+    <div class="layout">
+      <div class="card">
+        <h2>AI Art & Image Creator</h2>
+        <p>Describe the image you want to create. This is the first production stage of your studio.</p>
+        <div class="field"><label for="prompt">Describe your image</label><textarea id="prompt" placeholder="Example: Ultra-realistic cinematic luxury apartment campaign, floor-to-ceiling windows, warm sunset light, premium architectural photography, wide composition..."></textarea></div>
+        <div class="two">
+          <div class="field"><label for="style">Visual direction</label><select id="style"><option>Cinematic photorealism</option><option>Luxury commercial photography</option><option>Fashion editorial</option><option>High-end 3D render</option><option>Natural UGC realism</option><option>Architectural visualization</option></select></div>
+          <div class="field"><label for="ratio">Aspect ratio</label><select id="ratio"><option>16:9 — landscape</option><option>9:16 — vertical</option><option>1:1 — square</option><option>4:5 — portrait</option></select></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="quality">Detail level</label><select id="quality"><option>High detail</option><option>Maximum detail</option><option>Clean minimal composition</option></select></div>
+          <div class="field"><label for="seed">Project / character name</label><input id="seed" placeholder="e.g. Luxury Villa Campaign"></div>
+        </div>
+        <div class="actions"><button class="btn" id="savePrompt">Save creative brief</button><button class="btn secondary" id="copyPrompt">Copy image prompt</button><button class="btn secondary" id="uploadRef">Add reference image</button><input id="refFile" type="file" accept="image/*" hidden></div>
+        <div class="notice" id="engineNotice"><b>Engine connection status:</b> AMIRU SDXL Base is connected through your active Kaggle-hosted Gradio session. Keep that Kaggle session running while you generate.</div>
+        <div class="actions"><button class="btn" id="openGenerator">Open image generator</button><button class="btn secondary" id="showGenerator">Show generator here</button></div>
+      </div>
+      <div class="card">
+        <h2>Visual canvas</h2><p>Your generated image or uploaded reference will appear here.</p>
+        <div class="preview" id="preview"><div><div class="emptyicon">▧</div><b>Image canvas is ready</b><div class="status">Open the connected AMIRU generator to create an image. Generated results appear inside its panel.</div></div></div>
+        <div class="status" id="canvasStatus">Connected generator: Kaggle / Gradio session.</div>
+        <div id="generatorPanel" class="hidden" style="margin-top:14px">
+          <iframe id="amiruGeneratorFrame" title="AMIRU AI SDXL Base image generator" src="https://73241ef0a925b4cf70.gradio.live" style="width:100%;height:780px;border:1px solid #354052;border-radius:12px;background:#0b1018" allow="clipboard-read; clipboard-write; fullscreen"></iframe>
+          <div class="status">If the embedded generator does not load, use “Open image generator” to open it in a separate tab.</div>
+        </div>
+      </div>
+    </div>
+    <div class="tilegrid">
+      <div class="tile"><b>01 · Concept</b><span>Define subject, scene, emotion and purpose.</span></div>
+      <div class="tile"><b>02 · Visual identity</b><span>Set style, lighting, camera and composition.</span></div>
+      <div class="tile"><b>03 · Video source</b><span>Approve the still image before motion production.</span></div>
+    </div>
+  </section>
+
+  <section id="page-characters" class="hidden">
+    <div class="card"><h2>Face & Character Studio</h2><p>Create a reusable character record and keep reference images with its visual description.</p>
+      <div class="field"><label>Character name</label><input id="charName" placeholder="Character name"></div>
+      <div class="field"><label>Appearance and consistency notes</label><textarea id="charDesc" placeholder="Describe face, hairstyle, clothing, age range, distinctive features, voice/personality and details that must remain consistent."></textarea></div>
+      <div class="actions"><button class="btn" id="saveChar">Save character profile</button></div>
+      <div class="notice">This saves a character specification, not a newly generated face. Image generation must be connected before this panel can render new faces.</div>
+    </div>
+  </section>
+
+  <section id="page-video" class="hidden">
+    <div class="card"><h2>AI Video Engine</h2><p>Prepare a video-generation brief from an approved image or concept.</p>
+      <div class="field"><label>Video direction</label><textarea id="videoPrompt" placeholder="Describe subject motion, camera movement, scene progression, lighting, duration and sound..."></textarea></div>
+      <div class="two"><div class="field"><label>Duration target</label><select id="duration"><option>10 seconds</option><option>15 seconds</option><option>20 seconds</option><option>30 seconds</option></select></div><div class="field"><label>Format</label><select id="videoRatio"><option>16:9</option><option>9:16</option><option>1:1</option></select></div></div>
+      <div class="actions"><button class="btn" id="saveVideo">Save video brief</button><button class="btn secondary" id="copyVideo">Copy video prompt</button></div>
+      <div class="notice">Video rendering is not connected yet. Native 30-second generation will depend on a model that supports it; we will not claim it works until tested.</div>
+    </div>
+  </section>
+
+  <section id="page-projects" class="hidden">
+    <div class="card"><h2>Projects & History</h2><p>Briefs and character profiles saved in this browser on this device.</p><div class="history" id="history"></div><div class="actions"><button class="btn secondary" id="exportData">Export workspace backup</button><button class="btn secondary" id="clearData">Clear local workspace</button></div><div class="notice">Local browser storage only. This is not cloud-synced between devices yet. Export a backup before clearing browser data.</div></div>
+  </section>
+
+  <section id="page-architecture" class="hidden">
+    <div class="card"><h2>Engine architecture</h2><p>Our own application layer, built around replaceable generation engines.</p>
+      <div class="history">
+        <div class="historyitem"><b>AMIRU Studio Interface</b><span>Prototype ready</span></div>
+        <div class="historyitem"><b>Creative Brief & Prompt Orchestrator</b><span>Local workflow ready</span></div>
+        <div class="historyitem"><b>Image Generation Model — SDXL Base</b><span>Connected via temporary Kaggle / Gradio session</span></div>
+        <div class="historyitem"><b>Character Reference Store</b><span>Basic local profiles</span></div>
+        <div class="historyitem"><b>Video Generation Model</b><span>Not connected</span></div>
+        <div class="historyitem"><b>Cloud Accounts & Sync</b><span>Not connected</span></div>
+        <div class="historyitem"><b>Social Publishing Integrations</b><span>Not connected</span></div>
+      </div>
+      <div class="notice">The application code and creative workflow can be ours. The model weights, hosting and compute are separate components. We will use open-source or genuinely free options where feasible and require your approval before any paid service.</div>
+    </div>
+  </section>
+  <div class="footnote">AMIRU AI STUDIOS · A private creative workspace. Current build: dashboard + connected SDXL Base generator (temporary Kaggle session); character and video engines still require integration.</div>
+</main>
+</div>
+<script>
+
+const AMIRU_GENERATOR_URL = "https://73241ef0a925b4cf70.gradio.live";
+document.getElementById('openGenerator').onclick=()=>window.open(AMIRU_GENERATOR_URL,'_blank','noopener');
+document.getElementById('showGenerator').onclick=()=>{
+  const panel=document.getElementById('generatorPanel');
+  panel.classList.toggle('hidden');
+  document.getElementById('showGenerator').textContent=panel.classList.contains('hidden')?'Show generator here':'Hide generator';
+};
+
+const pages=['image','characters','video','projects','architecture'];
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');pages.forEach(p=>document.getElementById('page-'+p).classList.toggle('hidden',p!==b.dataset.page));if(b.dataset.page==='projects')renderHistory()}));
+const get=(id)=>document.getElementById(id).value.trim();
+const read=()=>JSON.parse(localStorage.getItem('amiruStudioData')||'{"items":[]}');
+const write=d=>localStorage.setItem('amiruStudioData',JSON.stringify(d));
+function add(item){const d=read();d.items.unshift({...item,created:new Date().toLocaleString()});write(d);renderHistory()}
+function renderHistory(){const box=document.getElementById('history'),d=read();box.innerHTML='';if(!d.items.length){box.innerHTML='<div class="muted">No saved work yet.</div>';return}d.items.forEach((x,i)=>{const el=document.createElement('div');el.className='historyitem';const a=document.createElement('div'),b=document.createElement('span');const strong=document.createElement('b');strong.textContent=x.title;a.append(strong);const detail=document.createElement('div');detail.textContent=x.detail||'';detail.className='muted';a.append(detail);b.textContent=x.created;el.append(a,b);box.append(el)})}
+document.getElementById('savePrompt').onclick=()=>{if(!get('prompt'))return alert('Add an image description first.');add({type:'Image brief',title:get('seed')||'Untitled image concept',detail:get('style')+' · '+get('ratio'),prompt:get('prompt')});alert('Creative brief saved on this device.')};
+document.getElementById('copyPrompt').onclick=()=>{const t=[get('prompt'),get('style'),get('ratio'),get('quality')].filter(Boolean).join(', ');if(!get('prompt'))return alert('Write an image description first.');navigator.clipboard?.writeText(t).then(()=>alert('Prompt copied.')).catch(()=>alert(t))};
+document.getElementById('uploadRef').onclick=()=>document.getElementById('refFile').click();
+document.getElementById('refFile').onchange=e=>{const f=e.target.files[0];if(!f)return;const u=URL.createObjectURL(f);document.getElementById('preview').innerHTML='';const img=document.createElement('img');img.src=u;document.getElementById('preview').append(img);document.getElementById('canvasStatus').textContent='Reference loaded: '+f.name};
+document.getElementById('saveChar').onclick=()=>{if(!get('charName'))return alert('Enter a character name.');add({type:'Character profile',title:get('charName'),detail:'Character specification',prompt:get('charDesc')});alert('Character profile saved locally.')};
+document.getElementById('saveVideo').onclick=()=>{if(!get('videoPrompt'))return alert('Add a video direction first.');add({type:'Video brief',title:'Video production brief',detail:get('duration')+' · '+get('videoRatio'),prompt:get('videoPrompt')});alert('Video brief saved locally.')};
+document.getElementById('copyVideo').onclick=()=>{const t=get('videoPrompt')+' | '+get('duration')+' | '+get('videoRatio');if(!get('videoPrompt'))return alert('Write a video direction first.');navigator.clipboard?.writeText(t).then(()=>alert('Video prompt copied.')).catch(()=>alert(t))};
+document.getElementById('exportData').onclick=()=>{const blob=new Blob([JSON.stringify(read(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='amiru-ai-studios-backup.json';a.click();URL.revokeObjectURL(a.href)};
+document.getElementById('clearData').onclick=()=>{if(confirm('Delete all locally saved briefs and character profiles?')){localStorage.removeItem('amiruStudioData');renderHistory()}};
+</script>
+</body></html>
