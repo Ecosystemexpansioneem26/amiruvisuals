@@ -68,5 +68,19 @@
     "description": "Elegant cinematic luxury bag showcase.",
     "video": "https://www.youtube.com/embed/ErfsLjifBKQ",
     "thumbnail": "https://img.youtube.com/vi/ErfsLjifBKQ/hqdefault.jpg"
-  }
+  },
+  {
+    "title": "New Video Project 01",
+    "category": "Cinematic",
+    "description": "A new cinematic short-form visual project.",
+    "video": "https://www.youtube.com/embed/a22E2rJAPEk",
+    "thumbnail": "https://img.youtube.com/vi/a22E2rJAPEk/hqdefault.jpg"
+  },
+  {
+    "title": "New Video Project 02",
+    "category": "Cinematic",
+    "description": "A new cinematic short-form visual project.",
+    "video": "https://www.youtube.com/embed/fdAF6TtbjVw",
+    "thumbnail": "https://img.youtube.com/vi/fdAF6TtbjVw/hqdefault.jpg"
+  } 
 ]
