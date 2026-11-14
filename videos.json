@@ -70,17 +70,18 @@
     "thumbnail": "https://img.youtube.com/vi/ErfsLjifBKQ/hqdefault.jpg"
   },
   {
-    "title": "New Video Project 01",
-    "category": "Cinematic",
-    "description": "A new cinematic short-form visual project.",
-    "video": "https://www.youtube.com/embed/a22E2rJAPEk",
-    "thumbnail": "https://img.youtube.com/vi/a22E2rJAPEk/hqdefault.jpg"
-  },
+  "title": "World Flavours 2026 – International Food Festival Promo",
+  "category": "Events & Festival Promotions",
+  "description": "A cinematic promotional film designed to build excitement and attract audiences to an international food festival.",
+  "video": "https://www.youtube.com/embed/a22E2rJAPEk",
+  "thumbnail": "https://img.youtube.com/vi/a22E2rJAPEk/hqdefault.jpg"
+},
+{
+  "title": "World Flavours 2026 – The Taste of the World",
+  "category": "Events & Festival Promotions",
+  "description": "A vibrant cinematic experience celebrating global cuisines, culture and the excitement of bringing people together through food.",
+  "video": "https://www.youtube.com/embed/fdAF6TtbjVw",
+  "thumbnail": "https://img.youtube.com/vi/fdAF6TtbjVw/hqdefault.jpg"
+
   {
-    "title": "New Video Project 02",
-    "category": "Cinematic",
-    "description": "A new cinematic short-form visual project.",
-    "video": "https://www.youtube.com/embed/fdAF6TtbjVw",
-    "thumbnail": "https://img.youtube.com/vi/fdAF6TtbjVw/hqdefault.jpg"
-  } 
 ]
