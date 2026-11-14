@@ -1,64 +1,65 @@
+
 [
   {
     "title": "Luxury Property Showcase",
     "category": "Real Estate",
-    "description": "Cinematic luxury property showcase and architectural storytelling.",
+    "description": "A cinematic luxury property presentation showcasing premium architecture, elegant interiors and exceptional living spaces.",
     "video": "https://www.youtube.com/embed/3xB7R1-cmnM",
     "thumbnail": "https://img.youtube.com/vi/3xB7R1-cmnM/hqdefault.jpg"
   },
   {
     "title": "Premium Product Film - Grow",
     "category": "Luxury Products",
-    "description": "Creative product film showcasing Grow.",
+    "description": "A premium product film designed to present a brand with cinematic visuals and a memorable advertising experience.",
     "video": "https://www.youtube.com/embed/DhjjQ4yHOmw",
     "thumbnail": "https://img.youtube.com/vi/DhjjQ4yHOmw/hqdefault.jpg"
   },
   {
     "title": "Fashion Editorial Motion",
     "category": "Fashion",
-    "description": "Fashion-led visuals with a cinematic point of view.",
+    "description": "A stylish cinematic fashion presentation created to elevate brand identity and capture attention.",
     "video": "https://www.youtube.com/embed/qnmDt316T5Y",
     "thumbnail": "https://img.youtube.com/vi/qnmDt316T5Y/hqdefault.jpg"
   },
   {
     "title": "Automotive Visual Story",
     "category": "Automotive",
-    "description": "Cinematic automotive visual storytelling.",
+    "description": "A cinematic automotive visual showcasing vehicle design, movement and premium brand appeal.",
     "video": "https://www.youtube.com/embed/_4rolgp-Q2Y",
     "thumbnail": "https://img.youtube.com/vi/_4rolgp-Q2Y/hqdefault.jpg"
   },
   {
     "title": "Social-First UGC Concept",
     "category": "UGC & Social Ads",
-    "description": "Short-form content designed for social audiences.",
+    "description": "A social-first advertising concept designed to capture attention and communicate a product message.",
     "video": "https://www.youtube.com/embed/D_kpJM4r-7c",
     "thumbnail": "https://img.youtube.com/vi/D_kpJM4r-7c/hqdefault.jpg"
   },
   {
     "title": "Cinematic Storytelling",
     "category": "Cinematic",
-    "description": "A cinematic story told through atmosphere and motion.",
+    "description": "A cinematic visual story built around atmosphere, emotion and compelling storytelling.",
     "video": "https://www.youtube.com/embed/7eIlo3YjRSQ",
     "thumbnail": "https://img.youtube.com/vi/7eIlo3YjRSQ/hqdefault.jpg"
   },
   {
     "title": "Premium Sneaker Advertisement",
     "category": "Luxury Products",
-    "description": "Cinematic sneaker advertisement showcasing premium design and style.",
+    "description": "A premium sneaker advertisement highlighting product design through dynamic cinematic visuals.",
     "video": "https://www.youtube.com/embed/pnjueNU9dFE",
     "thumbnail": "https://img.youtube.com/vi/pnjueNU9dFE/hqdefault.jpg"
   },
   {
     "title": "Cinematic Brand Intro & Outro",
     "category": "Cinematic",
-    "description": "Creative brand introduction and outro.",
+    "description": "A professional cinematic brand introduction and ending designed to create a memorable visual identity.",
     "video": "https://www.youtube.com/embed/T8fYklYYDu8",
     "thumbnail": "https://img.youtube.com/vi/T8fYklYYDu8/hqdefault.jpg"
   },
   {
     "title": "Premium Headphones Advertisement",
     "category": "Luxury Products",
-    "description": "Cinematic headphones product showcase.",
+    "description": "A cinematic product advertisement presenting premium headphones with a polished commercial look.",
     "video": "https://www.youtube.com/embed/zFAQw4Fv8xQ",
     "thumbnail": "https://img.youtube.com/vi/zFAQw4Fv8xQ/hqdefault.jpg"
   },
@@ -70,18 +71,18 @@
     "thumbnail": "https://img.youtube.com/vi/ErfsLjifBKQ/hqdefault.jpg"
   },
   {
-  "title": "World Flavours 2026 – International Food Festival Promo",
-  "category": "Events & Festival Promotions",
-  "description": "A cinematic promotional film designed to build excitement and attract audiences to an international food festival.",
-  "video": "https://www.youtube.com/embed/a22E2rJAPEk",
-  "thumbnail": "https://img.youtube.com/vi/a22E2rJAPEk/hqdefault.jpg"
-},
-{
-  "title": "World Flavours 2026 – The Taste of the World",
-  "category": "Events & Festival Promotions",
-  "description": "A vibrant cinematic experience celebrating global cuisines, culture and the excitement of bringing people together through food.",
-  "video": "https://www.youtube.com/embed/fdAF6TtbjVw",
-  "thumbnail": "https://img.youtube.com/vi/fdAF6TtbjVw/hqdefault.jpg"
-
+    "title": "World Flavours 2026 – International Food Festival Promo",
+    "category": "Events & Festival Promotions",
+    "description": "A cinematic promotional film designed to build excitement and attract audiences to an international food festival.",
+    "video": "https://www.youtube.com/embed/a22E2rJAPEk",
+    "thumbnail": "https://img.youtube.com/vi/a22E2rJAPEk/hqdefault.jpg"
+  },
   {
+    "title": "World Flavours 2026 – The Taste of the World",
+    "category": "Events & Festival Promotions",
+    "description": "A vibrant cinematic experience celebrating global cuisines, culture and the excitement of bringing people together through food.",
+    "video": "https://www.youtube.com/embed/fdAF6TtbjVw",
+    "thumbnail": "https://img.youtube.com/vi/fdAF6TtbjVw/hqdefault.jpg"
+  }
 ]
+
