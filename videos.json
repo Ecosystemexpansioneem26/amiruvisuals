@@ -1,5 +1,4 @@
-
-const videos = [
+[
   {
     title: "Fashion Editorial Motion",
     category: "Fashion",
@@ -98,6 +97,4 @@ const videos = [
     video: "https://youtu.be/5IMynQkHLrE",
     thumbnail: "https://img.youtube.com/vi/5IMynQkHLrE/hqdefault.jpg"
   }
-];
-
-export default videos;
+]
