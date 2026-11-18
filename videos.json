@@ -1,100 +1,101 @@
+
 [
   {
-    title: "Fashion Editorial Motion",
-    category: "Fashion",
-    description: "Cinematic fashion editorial film.",
-    video: "https://youtu.be/qnmDt316T5Y",
-    thumbnail: "https://img.youtube.com/vi/qnmDt316T5Y/hqdefault.jpg"
+    "title": "Fashion Editorial Motion",
+    "category": "Fashion",
+    "description": "Cinematic fashion editorial film.",
+    "video": "https://youtu.be/qnmDt316T5Y",
+    "thumbnail": "https://img.youtube.com/vi/qnmDt316T5Y/hqdefault.jpg"
   },
   {
-    title: "Luxury Property Showcase",
-    category: "Real Estate",
-    description: "A cinematic luxury property showcase.",
-    video: "https://youtu.be/3xB7R1-cmnM",
-    thumbnail: "https://img.youtube.com/vi/3xB7R1-cmnM/hqdefault.jpg"
+    "title": "Luxury Property Showcase",
+    "category": "Real Estate",
+    "description": "A cinematic luxury property showcase.",
+    "video": "https://youtu.be/3xB7R1-cmnM",
+    "thumbnail": "https://img.youtube.com/vi/3xB7R1-cmnM/hqdefault.jpg"
   },
   {
-    title: "Grow",
-    category: "Cinematic",
-    description: "A creative visual storytelling project.",
-    video: "https://youtu.be/DhjjQ4yHOmw",
-    thumbnail: "https://img.youtube.com/vi/DhjjQ4yHOmw/hqdefault.jpg"
+    "title": "Grow",
+    "category": "Cinematic",
+    "description": "Creative visual storytelling.",
+    "video": "https://youtu.be/DhjjQ4yHOmw",
+    "thumbnail": "https://img.youtube.com/vi/DhjjQ4yHOmw/hqdefault.jpg"
   },
   {
-    title: "Cinematic Storytelling",
-    category: "Cinematic",
-    description: "A cinematic visual story.",
-    video: "https://youtu.be/7eIlo3YjRSQ",
-    thumbnail: "https://img.youtube.com/vi/7eIlo3YjRSQ/hqdefault.jpg"
+    "title": "Cinematic Storytelling",
+    "category": "Cinematic",
+    "description": "A cinematic visual story.",
+    "video": "https://youtu.be/7eIlo3YjRSQ",
+    "thumbnail": "https://img.youtube.com/vi/7eIlo3YjRSQ/hqdefault.jpg"
   },
   {
-    title: "Premium Product Film",
-    category: "Luxury Products",
-    description: "Premium product advertising film.",
-    video: "https://youtu.be/D_kpJM4r-7c",
-    thumbnail: "https://img.youtube.com/vi/D_kpJM4r-7c/hqdefault.jpg"
+    "title": "Premium Product Film",
+    "category": "Luxury Products",
+    "description": "Premium product advertising film.",
+    "video": "https://youtu.be/D_kpJM4r-7c",
+    "thumbnail": "https://img.youtube.com/vi/D_kpJM4r-7c/hqdefault.jpg"
   },
   {
-    title: "Automotive Visual Story",
-    category: "Automotive",
-    description: "Cinematic automotive visual production.",
-    video: "https://youtu.be/_4rolgp-Q2Y",
-    thumbnail: "https://img.youtube.com/vi/_4rolgp-Q2Y/hqdefault.jpg"
+    "title": "Automotive Visual Story",
+    "category": "Automotive",
+    "description": "Cinematic automotive visual production.",
+    "video": "https://youtu.be/_4rolgp-Q2Y",
+    "thumbnail": "https://img.youtube.com/vi/_4rolgp-Q2Y/hqdefault.jpg"
   },
   {
-    title: "Sneaker Advertisement",
-    category: "Product Advertising",
-    description: "Short-form sneaker advertising concept.",
-    video: "https://youtube.com/shorts/pnjueNU9dFE",
-    thumbnail: "https://img.youtube.com/vi/pnjueNU9dFE/hqdefault.jpg"
+    "title": "Sneaker Advertisement",
+    "category": "Product Advertising",
+    "description": "Short-form sneaker advertisement.",
+    "video": "https://youtube.com/shorts/pnjueNU9dFE",
+    "thumbnail": "https://img.youtube.com/vi/pnjueNU9dFE/hqdefault.jpg"
   },
   {
-    title: "AMIRU AI Intro & Outro",
-    category: "Brand Identity",
-    description: "Cinematic brand introduction and outro.",
-    video: "https://youtube.com/shorts/T8fYklYYDu8",
-    thumbnail: "https://img.youtube.com/vi/T8fYklYYDu8/hqdefault.jpg"
+    "title": "AMIRU AI Intro & Outro",
+    "category": "Brand Identity",
+    "description": "Cinematic brand introduction and outro.",
+    "video": "https://youtube.com/shorts/T8fYklYYDu8",
+    "thumbnail": "https://img.youtube.com/vi/T8fYklYYDu8/hqdefault.jpg"
   },
   {
-    title: "Premium Headphones Advertisement",
-    category: "Product Advertising",
-    description: "Premium headphones visual advertisement.",
-    video: "https://youtube.com/shorts/zFAQw4Fv8xQ",
-    thumbnail: "https://img.youtube.com/vi/zFAQw4Fv8xQ/hqdefault.jpg"
+    "title": "Premium Headphones Advertisement",
+    "category": "Product Advertising",
+    "description": "Premium headphones visual advertisement.",
+    "video": "https://youtube.com/shorts/zFAQw4Fv8xQ",
+    "thumbnail": "https://img.youtube.com/vi/zFAQw4Fv8xQ/hqdefault.jpg"
   },
   {
-    title: "Luxury Bag Advertisement",
-    category: "Luxury Products",
-    description: "Cinematic luxury bag product advertisement.",
-    video: "https://youtube.com/shorts/ErfsLjifBKQ",
-    thumbnail: "https://img.youtube.com/vi/ErfsLjifBKQ/hqdefault.jpg"
+    "title": "Luxury Bag Advertisement",
+    "category": "Luxury Products",
+    "description": "Cinematic luxury bag advertisement.",
+    "video": "https://youtube.com/shorts/ErfsLjifBKQ",
+    "thumbnail": "https://img.youtube.com/vi/ErfsLjifBKQ/hqdefault.jpg"
   },
   {
-    title: "World Flavours 2026 – International Food Festival Promo",
-    category: "Events & Festivals",
-    description: "An exciting international food festival promotional film.",
-    video: "https://youtube.com/shorts/a22E2rJAPEk",
-    thumbnail: "https://img.youtube.com/vi/a22E2rJAPEk/hqdefault.jpg"
+    "title": "World Flavours Festival – Video 1",
+    "category": "Events & Festivals",
+    "description": "An exciting international food festival promotion.",
+    "video": "https://youtube.com/shorts/a22E2rJAPEk",
+    "thumbnail": "https://img.youtube.com/vi/a22E2rJAPEk/hqdefault.jpg"
   },
   {
-    title: "World Flavours 2026 – The Taste of the World",
-    category: "Events & Festivals",
-    description: "A celebration of international food, culture and flavours.",
-    video: "https://youtube.com/shorts/fdAF6TtbjVw",
-    thumbnail: "https://img.youtube.com/vi/fdAF6TtbjVw/hqdefault.jpg"
+    "title": "World Flavours Festival – Video 2",
+    "category": "Events & Festivals",
+    "description": "A celebration of food, culture and international flavours.",
+    "video": "https://youtube.com/shorts/fdAF6TtbjVw",
+    "thumbnail": "https://img.youtube.com/vi/fdAF6TtbjVw/hqdefault.jpg"
   },
   {
-    title: "Thanksgiving Family Gathering",
-    category: "Holiday & Lifestyle",
-    description: "A cinematic Thanksgiving story celebrating family and togetherness.",
-    video: "https://youtu.be/BV4n1pJCf9E",
-    thumbnail: "https://img.youtube.com/vi/BV4n1pJCf9E/hqdefault.jpg"
+    "title": "Thanksgiving Family Gathering",
+    "category": "Holiday & Lifestyle",
+    "description": "A cinematic Thanksgiving story celebrating family and togetherness.",
+    "video": "https://youtu.be/BV4n1pJCf9E",
+    "thumbnail": "https://img.youtube.com/vi/BV4n1pJCf9E/hqdefault.jpg"
   },
   {
-    title: "Black Friday Countdown",
-    category: "Retail & Promotional Ads",
-    description: "An attention-grabbing promotional concept for Black Friday.",
-    video: "https://youtu.be/5IMynQkHLrE",
-    thumbnail: "https://img.youtube.com/vi/5IMynQkHLrE/hqdefault.jpg"
+    "title": "Black Friday Countdown",
+    "category": "Retail & Promotional Ads",
+    "description": "An attention-grabbing Black Friday promotional video.",
+    "video": "https://youtu.be/5IMynQkHLrE",
+    "thumbnail": "https://img.youtube.com/vi/5IMynQkHLrE/hqdefault.jpg"
   }
-]
+    ]
