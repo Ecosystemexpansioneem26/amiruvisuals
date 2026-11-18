@@ -83,6 +83,20 @@
     "description": "A vibrant cinematic experience celebrating global cuisines, culture and the excitement of bringing people together through food.",
     "video": "https://www.youtube.com/embed/fdAF6TtbjVw",
     "thumbnail": "https://img.youtube.com/vi/fdAF6TtbjVw/hqdefault.jpg"
+  },
+  {
+  title: "Thanksgiving Family Gathering",
+  category: "Holiday & Lifestyle",
+  description: "A cinematic Thanksgiving story celebrating family, food and togetherness.",
+  video: "https://youtu.be/BV4n1pJCf9E",
+  thumbnail: "https://img.youtube.com/vi/BV4n1pJCf9E/hqdefault.jpg"
+},
+{
+  title: "Black Friday Countdown",
+  category: "Retail & Promotional Ads",
+  description: "A promotional video concept designed to help brands capture attention during Black Friday.",
+  video: "https://youtu.be/5IMynQkHLrE",
+  thumbnail: "https://img.youtube.com/vi/5IMynQkHLrE/hqdefault.jpg"
   }
 ]
 
